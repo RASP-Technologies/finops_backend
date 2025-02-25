@@ -20,6 +20,12 @@ Latest whl file version = `finops_backend-1.0.6-py3-none-any.whl`
 
 ### Step 3
 
+For GCP Ubuntu VMs do the following
+
+`sudo apt update`
+
+`sudo apt install python3.12-venv`
+
 Create a virtual environment using the following command
 
 ` python -m venv venv `
