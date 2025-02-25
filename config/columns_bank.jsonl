@@ -1,0 +1,23 @@
+{"table_name": "Product","column_name": "product_id","description": "Unique identifier for each product.","data_type": "string"}
+{"table_name": "Product","column_name": "product_type","description": "Type of the product (e.g., Bond, Interest Rate Swap).","data_type": "string"}
+{"table_name": "Product","column_name": "description","description": "Brief description of the product.","data_type": "string"}
+{"table_name": "Books","column_name": "book_id","description": "Unique identifier for each book.","data_type": "string"}
+{"table_name": "Books","column_name": "book_name","description": "Name of the book.","data_type": "string"}
+{"table_name": "Books","column_name": "region","description": "Region associated with the book.","data_type": "string"}
+{"table_name": "Books","column_name": "book_type","description": "Type of the book (e.g., Trading, Hedging).","data_type": "string"}
+{"table_name": "Trade","column_name": "trade_id","description": "Unique identifier for each trade.","data_type": "string"}
+{"table_name": "Trade","column_name": "product_id","description": "Product ID associated with the trade.","data_type": "string"}
+{"table_name": "Trade","column_name": "book_id","description": "Book ID associated with the trade.","data_type": "string"}
+{"table_name": "Trade","column_name": "trade_date","description": "Date of the trade.","data_type": "timestamp"}
+{"table_name": "Trade","column_name": "notional_amount","description": "Notional amount of the trade.","data_type": "float"}
+{"table_name": "Trade","column_name": "counterparty","description": "Counterparty of the trade.","data_type": "string"}
+{"table_name": "Trade","column_name": "start_date","description": "Start timestamp of the trade.","data_type": "timestamp"}
+{"table_name": "Trade","column_name": "end_date","description": "End date of the trade.","data_type": "timestamp"}
+{"table_name": "Trade","column_name": "status","description": "Status of the trade (e.g., Active, Closed).","data_type": "string"}
+{"table_name": "Trade","column_name": "currency","description": "Currency of the trade.","data_type": "string"}
+{"table_name": "Cashflows","column_name": "cashflow_id","description": "Unique identifier for each cashflow.","data_type": "string"}
+{"table_name": "Cashflows","column_name": "trade_id","description": "Trade ID associated with the cashflow.","data_type": "string"}
+{"table_name": "Cashflows","column_name": "cashflow_date","description": "Date of the cashflow.","data_type": "timestamp"}
+{"table_name": "Cashflows","column_name": "amount","description": "Amount of the cashflow.","data_type": "float"}
+{"table_name": "Cashflows","column_name": "cashflow_type","description": "Type of the cashflow (e.g., Coupon, Principal).","data_type": "string"}
+{"table_name": "Cashflows","column_name": "status","description": "Status of the cashflow (e.g., Pending, Confirmed).","data_type": "string"}

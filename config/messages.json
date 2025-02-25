@@ -1,0 +1,8 @@
+[
+ {"role": "user", "content": "List all trading books with their corresponding regions."},
+ {"role": "assistant", "content": "SELECT book_id, book_name, region FROM Books;"},
+ {"role": "user", "content": "Show the number of trades per product type."},
+ {"role": "assistant", "content": "SELECT p.product_type, COUNT(t.trade_id) AS total_trades FROM Trade t JOIN Product p ON t.product_id = p.product_id GROUP BY p.product_type ORDER BY total_trades DESC;"},
+ {"role": "user", "content": "Find the top 3 counterparties with the highest total notional amount in trades executed in the last 6 months."},
+ {"role": "assistant", "content": "SELECT t.counterparty, SUM(t.notional_amount) AS total_notional FROM Trade t WHERE t.trade_date >= DATE_SUB(CURRENT_DATE(), INTERVAL 6 MONTH) GROUP BY t.counterparty ORDER BY total_notional DESC LIMIT 3;"}
+]

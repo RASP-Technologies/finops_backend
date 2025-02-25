@@ -1,0 +1,5 @@
+src/*
+build
+venv
+*do-not-commit*
+dist/*.gz
