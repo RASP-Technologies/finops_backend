@@ -38,7 +38,7 @@ Activate virtual environment
 
 Install finops_backend using following command
 
-` pip install dist/finops_backend-1.0.-py3-none-any.whl `
+` pip install dist/finops_backend-1.0.7-py3-none-any.whl `
 
 ### Step 5
 
