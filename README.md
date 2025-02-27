@@ -16,7 +16,7 @@ messages.json
 
 Download the whl file from `dist/' directory
 
-Latest whl file version = `finops_backend-1.0.7-py3-none-any.whl`
+Latest whl file version = `finops_backend-1.0.11-py3-none-any.whl`
 
 ### Step 3
 
@@ -38,10 +38,10 @@ Activate virtual environment
 
 Install finops_backend using following command
 
-` pip install dist/finops_backend-1.0.7-py3-none-any.whl `
+` pip install dist/finops_backend-1.0.11-py3-none-any.whl `
 
 ### Step 5
 
-Once the installation is complete you can execute the following command to start finops_backend
+Once the installation is complete you can execute the following command to start finops_backend. PS: Execute the command from the source code directory where config directory is created
 
 ` finops_backend `
