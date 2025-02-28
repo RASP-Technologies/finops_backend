@@ -18,7 +18,7 @@ distro==1.9.0
 docstring_parser==0.16
 faiss-cpu==1.10.0
 Flask==3.1.0
-Flask-Cors==5.0.0 
+Flask-Cors==5.0.0
 fonttools==4.55.8
 frozenlist==1.5.0
 gitdb==4.0.12
@@ -54,7 +54,8 @@ jsonschema-specifications==2024.10.1
 kiwisolver==1.4.8
 langchain==0.3.17
 langchain-community==0.3.16
-langchain-core==0.3.34
+langchain-core==0.3.39
+langchain-openai==0.3.7
 langchain-text-splitters==0.3.6
 langsmith==0.3.6
 markdown-it-py==3.0.0
