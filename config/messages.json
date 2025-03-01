@@ -1,6 +1,6 @@
 [
- {"role": "user", "content": "List all Number of payments"},
- {"role": "assistant", "content": "SELECT number_of_payments FROM event_store;"},
+ {"role": "user", "content": "How many total number of payments have been done"},
+ {"role": "assistant", "content": "SELECT SUM(number_of_payments) AS total_number_of_payments FROM event_store WHERE number_of_payments IS NOT NULL;"},
  {"role": "user", "content": "Show the number of lifecycle events per sender bank"},
  {"role": "assistant", "content": "SELECT COUNT(life_cycle_id) AS total_lifecycle_events FROM event_store GROUP BY sender_bank_name ORDER BY sender_bank_name DESC;"}
 ]
