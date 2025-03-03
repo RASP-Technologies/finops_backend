@@ -1,4 +1,4 @@
-[{"table_name": "event_store", "column_name": "lifecycle_id", "description": "Unique identifier for the lifecycle of the event", "data_type": "STRING"}
+{"table_name": "event_store", "column_name": "lifecycle_id", "description": "Unique identifier for the lifecycle of the event", "data_type": "STRING"}
 {"table_name": "event_store", "column_name": "bulk_id", "description": "Unique reference for bulk transactions", "data_type": "STRING"}
 {"table_name": "event_store", "column_name": "payment_type", "description": "Type of the payment", "data_type": "STRING"}
 {"table_name": "event_store", "column_name": "payment_sub_type", "description": "Sub-type of the payment", "data_type": "STRING"}
@@ -379,4 +379,4 @@
 {"table_name": "event_store", "column_name": "customer_pb_marker", "description": "PB marker for the customer", "data_type": "STRING"}
 {"table_name": "event_store", "column_name": "customer_portfolio_segment", "description": "Portfolio segment of the customer", "data_type": "STRING"}
 {"table_name": "event_store", "column_name": "customer_voice_id", "description": "Voice ID of the customer", "data_type": "STRING"}
-{"table_name": "event_store", "column_name": "customer_voice_id_last_change_date", "description": "Last changed date for the customer's voice ID", "data_type": "INT64"}]
+{"table_name": "event_store", "column_name": "customer_voice_id_last_change_date", "description": "Last changed date for the customer's voice ID", "data_type": "INT64"}
