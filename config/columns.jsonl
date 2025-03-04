@@ -1,3 +1,95 @@
+{"table_name": "cm_driver_master", "column_name": "lifecycle_id", "description": "Unique identifier for the lifecycle of the event", "data_type": "STRING"}
+{"table_name": "cm_driver_master", "column_name": "start_timestamp", "description": "Start timestamp of the event", "data_type": "TIMESTAMP"}
+{"table_name": "cm_driver_master", "column_name": "end_timestamp", "description": "End timestamp of the event", "data_type": "TIMESTAMP"}
+{"table_name": "cm_driver_master", "column_name": "updatedTimestamp", "description": "Timestamp when the record was last updated", "data_type": "TIMESTAMP"}
+{"table_name": "cm_driver_master", "column_name": "bq_insert_timestamp", "description": "Timestamp when the record was inserted into BigQuery", "data_type": "TIMESTAMP"}
+{"table_name": "cm_event_queue_changed", "column_name": "version", "description": "Version of the event queue change", "data_type": "STRING"}
+{"table_name": "cm_event_queue_changed", "column_name": "ids", "description": "Array of IDs related to the event", "data_type": "ARRAY<STRUCT<channelId STRING, identifier STRING, timestamp INT64, payload STRUCT<schema STRUCT<alert_id STRING, event_type STRING, lifecycle_id STRING, pib_suspended STRING, customer_id STRING, customer_portfolio_type STRING, customer_portfolio_region STRING, customer_portfolio_class STRING, customer_portfolio_channel STRING, customer_portfolio_product STRING, customer_portfolio_country STRING, treatment_strategy STRING, self_serve_strategy STRING, customer_id_number STRING>>>>"}
+{"table_name": "cm_event_queue_changed", "column_name": "ids.channelId", "description": "Channel ID of the event", "data_type": "STRING"}
+{"table_name": "cm_event_queue_changed", "column_name": "ids.identifier", "description": "Identifier of the event", "data_type": "STRING"}
+{"table_name": "cm_event_queue_changed", "column_name": "ids.timestamp", "description": "Timestamp of the event", "data_type": "INT64"}
+{"table_name": "cm_event_queue_changed", "column_name": "ids.payload", "description": "Payload of the event", "data_type": "STRUCT<schema STRUCT<alert_id STRING, event_type STRING, lifecycle_id STRING, pib_suspended STRING, customer_id STRING, customer_portfolio_type STRING, customer_portfolio_region STRING, customer_portfolio_class STRING, customer_portfolio_channel STRING, customer_portfolio_product STRING, customer_portfolio_country STRING, treatment_strategy STRING, self_serve_strategy STRING, customer_id_number STRING>>"}
+{"table_name": "cm_event_queue_changed", "column_name": "ids.payload.schema", "description": "Schema of the payload", "data_type": "STRUCT<alert_id STRING, event_type STRING, lifecycle_id STRING, pib_suspended STRING, customer_id STRING, customer_portfolio_type STRING, customer_portfolio_region STRING, customer_portfolio_class STRING, customer_portfolio_channel STRING, customer_portfolio_product STRING, customer_portfolio_country STRING, treatment_strategy STRING, self_serve_strategy STRING, customer_id_number STRING>"}
+{"table_name": "cm_event_queue_changed", "column_name": "ids.payload.schema.alert_id", "description": "Alert ID of the event", "data_type": "STRING"}
+{"table_name": "cm_event_queue_changed", "column_name": "ids.payload.schema.event_type", "description": "Type of the event", "data_type": "STRING"}
+{"table_name": "cm_event_queue_changed", "column_name": "ids.payload.schema.lifecycle_id", "description": "Lifecycle ID of the event", "data_type": "STRING"}
+{"table_name": "cm_event_queue_changed", "column_name": "ids.payload.schema.pib_suspended", "description": "Indicator for PIB suspension", "data_type": "STRING"}
+{"table_name": "cm_event_queue_changed", "column_name": "ids.payload.schema.customer_id", "description": "Customer ID", "data_type": "STRING"}
+{"table_name": "cm_event_queue_changed", "column_name": "ids.payload.schema.customer_portfolio_type", "description": "Type of the customer portfolio", "data_type": "STRING"}
+{"table_name": "cm_event_queue_changed", "column_name": "ids.payload.schema.customer_portfolio_region", "description": "Region of the customer portfolio", "data_type": "STRING"}
+{"table_name": "cm_event_queue_changed", "column_name": "ids.payload.schema.customer_portfolio_class", "description": "Classification of the customer portfolio", "data_type": "STRING"}
+{"table_name": "cm_event_queue_changed", "column_name": "ids.payload.schema.customer_portfolio_channel", "description": "Channel of the customer portfolio", "data_type": "STRING"}
+{"table_name": "cm_event_queue_changed", "column_name": "ids.payload.schema.customer_portfolio_product", "description": "Product of the customer portfolio", "data_type": "STRING"}
+{"table_name": "cm_event_queue_changed", "column_name": "ids.payload.schema.customer_portfolio_country", "description": "Country of the customer portfolio", "data_type": "STRING"}
+{"table_name": "cm_event_queue_changed", "column_name": "ids.payload.schema.treatment_strategy", "description": "Treatment strategy for the event", "data_type": "STRING"}
+{"table_name": "cm_event_queue_changed", "column_name": "ids.payload.schema.self_serve_strategy", "description": "Self-serve strategy for the event", "data_type": "STRING"}
+{"table_name": "cm_event_queue_changed", "column_name": "ids.payload.schema.customer_id_number", "description": "Customer ID number", "data_type": "STRING"}
+{"table_name": "cm_event_queue_changed", "column_name": "notificationVersion", "description": "Version of the notification message", "data_type": "STRING"}
+{"table_name": "cm_event_queue_changed", "column_name": "queueId", "description": "ID of the queue", "data_type": "STRING"}
+{"table_name": "cm_event_queue_changed", "column_name": "timestamp", "description": "Timestamp of the event", "data_type": "STRING"}
+{"table_name": "cm_event_queue_changed", "column_name": "updatedTimestamp", "description": "Timestamp when the record was last updated", "data_type": "TIMESTAMP"}
+{"table_name": "cm_event_arrival", "column_name": "alert", "description": "Flag indicating if the message triggered an alert", "data_type": "BOOL"}
+{"table_name": "cm_event_arrival", "column_name": "version", "description": "Version of the event arrival", "data_type": "STRING"}
+{"table_name": "cm_event_arrival", "column_name": "versionId", "description": "Internal version identifier of the message", "data_type": "STRING"}
+{"table_name": "cm_event_arrival", "column_name": "notificationVersion", "description": "Version of the notification message", "data_type": "STRING"}
+{"table_name": "cm_event_arrival", "column_name": "id", "description": "ID of the event", "data_type": "STRUCT<channelId STRING, identifier STRING, timestamp INT64, payload STRUCT<schema STRUCT<alert_id STRING, event_type STRING, lifecycle_id STRING, pib_suspended STRING, customer_id STRING, customer_portfolio_type STRING, customer_portfolio_region STRING, customer_portfolio_class STRING, customer_portfolio_channel STRING, customer_portfolio_product STRING, customer_portfolio_country STRING, treatment_strategy STRING, self_serve_strategy STRING, customer_id_number STRING>>>"}
+{"table_name": "cm_event_arrival", "column_name": "id.channelId", "description": "Channel ID of the event", "data_type": "STRING"}
+{"table_name": "cm_event_arrival", "column_name": "id.identifier", "description": "Identifier of the event", "data_type": "STRING"}
+{"table_name": "cm_event_arrival", "column_name": "id.timestamp", "description": "Timestamp of the event", "data_type": "INT64"}
+{"table_name": "cm_event_arrival", "column_name": "id.payload", "description": "Payload of the event", "data_type": "STRUCT<schema STRUCT<alert_id STRING, event_type STRING, lifecycle_id STRING, pib_suspended STRING, customer_id STRING, customer_portfolio_type STRING, customer_portfolio_region STRING, customer_portfolio_class STRING, customer_portfolio_channel STRING, customer_portfolio_product STRING, customer_portfolio_country STRING, treatment_strategy STRING, self_serve_strategy STRING, customer_id_number STRING>>"}
+{"table_name": "cm_event_arrival", "column_name": "id.payload.schema", "description": "Schema of the payload", "data_type": "STRUCT<alert_id STRING, event_type STRING, lifecycle_id STRING, pib_suspended STRING, customer_id STRING, customer_portfolio_type STRING, customer_portfolio_region STRING, customer_portfolio_class STRING, customer_portfolio_channel STRING, customer_portfolio_product STRING, customer_portfolio_country STRING, treatment_strategy STRING, self_serve_strategy STRING, customer_id_number STRING>"}
+{"table_name": "cm_event_arrival", "column_name": "id.payload.schema.alert_id", "description": "Alert ID of the event", "data_type": "STRING"}
+{"table_name": "cm_event_arrival", "column_name": "id.payload.schema.event_type", "description": "Type of the event", "data_type": "STRING"}
+{"table_name": "cm_event_arrival", "column_name": "id.payload.schema.lifecycle_id", "description": "Lifecycle ID of the event", "data_type": "STRING"}
+{"table_name": "cm_event_arrival", "column_name": "id.payload.schema.pib_suspended", "description": "Indicator for PIB suspension", "data_type": "STRING"}
+{"table_name": "cm_event_arrival", "column_name": "id.payload.schema.customer_id", "description": "Customer ID", "data_type": "STRING"}
+{"table_name": "cm_event_arrival", "column_name": "id.payload.schema.customer_portfolio_type", "description": "Type of the customer portfolio", "data_type": "STRING"}
+{"table_name": "cm_event_arrival", "column_name": "id.payload.schema.customer_portfolio_region", "description": "Region of the customer portfolio", "data_type": "STRING"}
+{"table_name": "cm_event_arrival", "column_name": "id.payload.schema.customer_portfolio_class", "description": "Classification of the customer portfolio", "data_type": "STRING"}
+{"table_name": "cm_event_arrival", "column_name": "id.payload.schema.customer_portfolio_channel", "description": "Channel of the customer portfolio", "data_type": "STRING"}
+{"table_name": "cm_event_arrival", "column_name": "id.payload.schema.customer_portfolio_product", "description": "Product of the customer portfolio", "data_type": "STRING"}
+{"table_name": "cm_event_arrival", "column_name": "id.payload.schema.customer_portfolio_country", "description": "Country of the customer portfolio", "data_type": "STRING"}
+{"table_name": "cm_event_arrival", "column_name": "id.payload.schema.treatment_strategy", "description": "Treatment strategy for the event", "data_type": "STRING"}
+{"table_name": "cm_event_arrival", "column_name": "id.payload.schema.self_serve_strategy", "description": "Self-serve strategy for the event", "data_type": "STRING"}
+{"table_name": "cm_event_arrival", "column_name": "id.payload.schema.customer_id_number", "description": "Customer ID number", "data_type": "STRING"}
+{"table_name": "cm_event_arrival", "column_name": "versionTimestamp", "description": "Timestamp when the event was received in Case Manager", "data_type": "INT64"}
+{"table_name": "cm_event_arrival", "column_name": "timestamp", "description": "Timestamp of the event", "data_type": "STRING"}
+{"table_name": "cm_event_arrival", "column_name": "updatedTimestamp", "description": "Timestamp when the record was last updated", "data_type": "TIMESTAMP"}
+{"table_name": "cm_event_state_updates", "column_name": "userId", "description": "User ID of the user who performed the status change", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "stateMachineId", "description": "State machine ID of the changed state", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "updatedAt", "description": "Timestamp when the status change occurred", "data_type": "INT64"}
+{"table_name": "cm_event_state_updates", "column_name": "username", "description": "Username of the user who performed the status change", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "state", "description": "State of the event", "data_type": "STRUCT<id STRING>"}
+{"table_name": "cm_event_state_updates", "column_name": "state.id", "description": "ID of the new state", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "version", "description": "Version of the event state update", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "timestamp", "description": "Timestamp of the event", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "notificationVersion", "description": "Version of the notification message", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "reasons", "description": "Array of reasons for the state change", "data_type": "ARRAY<STRUCT<id STRING, statusId STRING, name STRING>>"}
+{"table_name": "cm_event_state_updates", "column_name": "reasons.id", "description": "ID of the reason", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "reasons.statusId", "description": "Status ID of the reason", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "reasons.name", "description": "Name of the reason", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "ids", "description": "Array of IDs related to the event", "data_type": "ARRAY<STRUCT<channelId STRING, identifier STRING, timestamp INT64, payload STRUCT<schema STRUCT<alert_id STRING, event_type STRING, lifecycle_id STRING, pib_suspended STRING, customer_id STRING, customer_portfolio_type STRING, customer_portfolio_region STRING, customer_portfolio_class STRING, customer_portfolio_channel STRING, customer_portfolio_product STRING, customer_portfolio_country STRING, treatment_strategy STRING, self_serve_strategy STRING, customer_id_number STRING>>>>"}
+{"table_name": "cm_event_state_updates", "column_name": "ids.channelId", "description": "Channel ID of the event", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "ids.identifier", "description": "Identifier of the event", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "ids.timestamp", "description": "Timestamp of the event", "data_type": "INT64"}
+{"table_name": "cm_event_state_updates", "column_name": "ids.payload", "description": "Payload of the event", "data_type": "STRUCT<schema STRUCT<alert_id STRING, event_type STRING, lifecycle_id STRING, pib_suspended STRING, customer_id STRING, customer_portfolio_type STRING, customer_portfolio_region STRING, customer_portfolio_class STRING, customer_portfolio_channel STRING, customer_portfolio_product STRING, customer_portfolio_country STRING, treatment_strategy STRING, self_serve_strategy STRING, customer_id_number STRING>>"}
+{"table_name": "cm_event_state_updates", "column_name": "ids.payload.schema", "description": "Schema of the payload", "data_type": "STRUCT<alert_id STRING, event_type STRING, lifecycle_id STRING, pib_suspended STRING, customer_id STRING, customer_portfolio_type STRING, customer_portfolio_region STRING, customer_portfolio_class STRING, customer_portfolio_channel STRING, customer_portfolio_product STRING, customer_portfolio_country STRING, treatment_strategy STRING, self_serve_strategy STRING, customer_id_number STRING>"}
+{"table_name": "cm_event_state_updates", "column_name": "ids.payload.schema.alert_id", "description": "Alert ID of the event", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "ids.payload.schema.event_type", "description": "Type of the event", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "ids.payload.schema.lifecycle_id", "description": "Lifecycle ID of the event", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "ids.payload.schema.pib_suspended", "description": "Indicator for PIB suspension", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "ids.payload.schema.customer_id", "description": "Customer ID", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "ids.payload.schema.customer_portfolio_type", "description": "Type of the customer portfolio", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "ids.payload.schema.customer_portfolio_region", "description": "Region of the customer portfolio", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "ids.payload.schema.customer_portfolio_class", "description": "Classification of the customer portfolio", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "ids.payload.schema.customer_portfolio_channel", "description": "Channel of the customer portfolio", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "ids.payload.schema.customer_portfolio_product", "description": "Product of the customer portfolio", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "ids.payload.schema.customer_portfolio_country", "description": "Country of the customer portfolio", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "ids.payload.schema.treatment_strategy", "description": "Treatment strategy for the event", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "ids.payload.schema.self_serve_strategy", "description": "Self-serve strategy for the event", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "ids.payload.schema.customer_id_number", "description": "Customer ID number", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "note", "description": "Note added when the status changes", "data_type": "STRING"}
+{"table_name": "cm_event_state_updates", "column_name": "updatedTimestamp", "description": "Timestamp when the record was last updated", "data_type": "TIMESTAMP"}
 {"table_name": "event_store", "column_name": "lifecycle_id", "description": "Unique identifier for the lifecycle of the event", "data_type": "STRING"}
 {"table_name": "event_store", "column_name": "bulk_id", "description": "Unique reference for bulk transactions", "data_type": "STRING"}
 {"table_name": "event_store", "column_name": "payment_type", "description": "Type of the payment", "data_type": "STRING"}
@@ -380,3 +472,52 @@
 {"table_name": "event_store", "column_name": "customer_portfolio_segment", "description": "Portfolio segment of the customer", "data_type": "STRING"}
 {"table_name": "event_store", "column_name": "customer_voice_id", "description": "Voice ID of the customer", "data_type": "STRING"}
 {"table_name": "event_store", "column_name": "customer_voice_id_last_change_date", "description": "Last changed date for the customer's voice ID", "data_type": "INT64"}
+{"table_name": "workflow_rules_vw", "column_name": "actions", "description": "Actions for the workflow rule", "data_type": "ARRAY<STRING>"}
+{"table_name": "workflow_rules_vw", "column_name": "createdAt", "description": "Timestamp when the workflow rule was created", "data_type": "INT64"}
+{"table_name": "workflow_rules_vw", "column_name": "createdBy", "description": "User who created the workflow rule", "data_type": "STRING"}
+{"table_name": "workflow_rules_vw", "column_name": "id", "description": "ID of the workflow rule", "data_type": "STRING"}
+{"table_name": "workflow_rules_vw", "column_name": "originalId", "description": "Original ID of the workflow rule", "data_type": "STRING"}
+{"table_name": "workflow_rules_vw", "column_name": "rulesProjectId", "description": "ID of the rules project", "data_type": "STRING"}
+{"table_name": "workflow_rules_vw", "column_name": "rulesProjectSnapshotId", "description": "Snapshot ID of the rules project", "data_type": "STRING"}
+{"table_name": "workflow_rules_vw", "column_name": "scoreEnabled", "description": "Indicator if scoring is enabled for the workflow rule", "data_type": "BOOL"}
+{"table_name": "workflow_rules_vw", "column_name": "workflowRuleBlockName", "description": "Name of the workflow rule block", "data_type": "STRING"}
+{"table_name": "workflow_rules_vw", "column_name": "targetVarValue", "description": "Target variable value for the workflow rule", "data_type": "STRING"}
+{"table_name": "workflow_rules_vw", "column_name": "comment", "description": "Comment for the workflow rule", "data_type": "STRING"}
+{"table_name": "workflow_rules_vw", "column_name": "condition", "description": "Condition for the workflow rule", "data_type": "STRING"}
+{"table_name": "workflow_rules_vw", "column_name": "rulesProjectDesc", "description": "Description of the rules project", "data_type": "STRING"}
+{"table_name": "workflow_rules_vw", "column_name": "rulesProjectSnapshotDesc", "description": "Description of the rules project snapshot", "data_type": "STRING"}
+{"table_name": "workflow_rules_vw", "column_name": "variables", "description": "Variables for the workflow rule", "data_type": "STRING"}
+{"table_name": "workflow_rules_vw", "column_name": "description", "description": "Description of the workflow rule", "data_type": "STRING"}
+{"table_name": "workflow_rules_vw", "column_name": "name", "description": "Name of the workflow rule", "data_type": "STRING"}
+{"table_name": "workflow_rules_vw", "column_name": "workflow_name", "description": "Name of the workflow", "data_type": "STRING"}
+{"table_name": "workflow_rules_vw", "column_name": "username", "description": "Username for the workflow rule", "data_type": "STRING"}
+{"table_name": "workflow_rules_vw", "column_name": "timestamp", "description": "Timestamp for the workflow rule", "data_type": "INT64"}
+{"table_name": "workflow_rules_vw", "column_name": "timestamp_formatted", "description": "Formatted timestamp for the workflow rule", "data_type": "TIMESTAMP"}
+{"table_name": "workflow_rules_vw", "column_name": "updatedTimestamp", "description": "Timestamp when the workflow rule was last updated", "data_type": "TIMESTAMP"}
+{"table_name": "cm_event_assignee_update", "column_name": "version", "description": "Version of the event assignee update", "data_type": "STRING"}
+{"table_name": "cm_event_assignee_update", "column_name": "ids", "description": "Array of IDs related to the event", "data_type": "ARRAY<STRUCT<channelId STRING, identifier STRING, timestamp INT64, payload STRUCT<schema STRUCT<alert_id STRING, event_type STRING, lifecycle_id STRING, pib_suspended STRING, customer_id STRING, customer_portfolio_type STRING, customer_portfolio_region STRING, customer_portfolio_class STRING, customer_portfolio_channel STRING, customer_portfolio_product STRING, customer_portfolio_country STRING, treatment_strategy STRING, self_serve_strategy STRING, customer_id_number STRING>>>>"}
+{"table_name": "cm_event_assignee_update", "column_name": "ids.channelId", "description": "Channel ID of the event", "data_type": "STRING"}
+{"table_name": "cm_event_assignee_update", "column_name": "ids.identifier", "description": "Identifier of the event", "data_type": "STRING"}
+{"table_name": "cm_event_assignee_update", "column_name": "ids.timestamp", "description": "Timestamp of the event", "data_type": "INT64"}
+{"table_name": "cm_event_assignee_update", "column_name": "ids.payload", "description": "Payload of the event", "data_type": "STRUCT<schema STRUCT<alert_id STRING, event_type STRING, lifecycle_id STRING, pib_suspended STRING, customer_id STRING, customer_portfolio_type STRING, customer_portfolio_region STRING, customer_portfolio_class STRING, customer_portfolio_channel STRING, customer_portfolio_product STRING, customer_portfolio_country STRING, treatment_strategy STRING, self_serve_strategy STRING, customer_id_number STRING>>"}
+{"table_name": "cm_event_assignee_update", "column_name": "ids.payload.schema", "description": "Schema of the payload", "data_type": "STRUCT<alert_id STRING, event_type STRING, lifecycle_id STRING, pib_suspended STRING, customer_id STRING, customer_portfolio_type STRING, customer_portfolio_region STRING, customer_portfolio_class STRING, customer_portfolio_channel STRING, customer_portfolio_product STRING, customer_portfolio_country STRING, treatment_strategy STRING, self_serve_strategy STRING, customer_id_number STRING>"}
+{"table_name": "cm_event_assignee_update", "column_name": "ids.payload.schema.alert_id", "description": "Alert ID of the event", "data_type": "STRING"}
+{"table_name": "cm_event_assignee_update", "column_name": "ids.payload.schema.event_type", "description": "Type of the event", "data_type": "STRING"}
+{"table_name": "cm_event_assignee_update", "column_name": "ids.payload.schema.lifecycle_id", "description": "Lifecycle ID of the event", "data_type": "STRING"}
+{"table_name": "cm_event_assignee_update", "column_name": "ids.payload.schema.pib_suspended", "description": "Indicator for PIB suspension", "data_type": "STRING"}
+{"table_name": "cm_event_assignee_update", "column_name": "ids.payload.schema.customer_id", "description": "Customer ID", "data_type": "STRING"}
+{"table_name": "cm_event_assignee_update", "column_name": "ids.payload.schema.customer_portfolio_type", "description": "Type of the customer portfolio", "data_type": "STRING"}
+{"table_name": "cm_event_assignee_update", "column_name": "ids.payload.schema.customer_portfolio_region", "description": "Region of the customer portfolio", "data_type": "STRING"}
+{"table_name": "cm_event_assignee_update", "column_name": "ids.payload.schema.customer_portfolio_class", "description": "Classification of the customer portfolio", "data_type": "STRING"}
+{"table_name": "cm_event_assignee_update", "column_name": "ids.payload.schema.customer_portfolio_channel", "description": "Channel of the customer portfolio", "data_type": "STRING"}
+{"table_name": "cm_event_assignee_update", "column_name": "ids.payload.schema.customer_portfolio_product", "description": "Product of the customer portfolio", "data_type": "STRING"}
+{"table_name": "cm_event_assignee_update", "column_name": "ids.payload.schema.customer_portfolio_country", "description": "Country of the customer portfolio", "data_type": "STRING"}
+{"table_name": "cm_event_assignee_update", "column_name": "ids.payload.schema.treatment_strategy", "description": "Treatment strategy for the event", "data_type": "STRING"}
+{"table_name": "cm_event_assignee_update", "column_name": "ids.payload.schema.self_serve_strategy", "description": "Self-serve strategy for the event", "data_type": "STRING"}
+{"table_name": "cm_event_assignee_update", "column_name": "ids.payload.schema.customer_id_number", "description": "Customer ID number", "data_type": "STRING"}
+{"table_name": "cm_event_assignee_update", "column_name": "notificationVersion", "description": "Version of the notification message", "data_type": "STRING"}
+{"table_name": "cm_event_assignee_update", "column_name": "userId", "description": "User ID of the new assignee", "data_type": "STRING"}
+{"table_name": "cm_event_assignee_update", "column_name": "updatedAt", "description": "Timestamp when the status change occurred", "data_type": "INT64"}
+{"table_name": "cm_event_assignee_update", "column_name": "username", "description": "Username of the new assignee", "data_type": "STRING"}
+{"table_name": "cm_event_assignee_update", "column_name": "timestamp", "description": "Timestamp of the event", "data_type": "STRING"}
+{"table_name": "cm_event_assignee_update", "column_name": "updatedTimestamp", "description": "Timestamp when the record was last updated", "data_type": "TIMESTAMP"}
