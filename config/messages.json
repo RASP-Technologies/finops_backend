@@ -7,7 +7,7 @@
     {"role": "assistant", "content": "SELECT sender_bank_country_code, receiver_bank_country_code, COUNT(*) AS transaction_count FROM event_store GROUP BY sender_bank_country_code, receiver_bank_country_code;"},
     {"role": "user", "content": "Summarize the risk decisions for our transactions."},
     {"role": "assistant", "content": "SELECT outcome_decision, outcome_risk_level, COUNT(*) AS decision_count FROM event_store GROUP BY outcome_decision, outcome_risk_level;"},
-    {"role": "user", "content": "Show the count of customers who have updated their email id in last 1 month."},
+    {"role": "user", "content": "Show the count of assignee who have updated their email id in last 1 month."},
     {"role": "assistant", "content": "SELECT COUNT(DISTINCT a.userId) AS user_count FROM cm_event_assignee_update a JOIN UNNEST(a.ids) z ON TRUE JOIN event_store ON z.identifier = event_store.lifecycle_id WHERE TIMESTAMP_MILLIS(event_store.customer_email_last_update_at) >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) ;"}
 
 ]
