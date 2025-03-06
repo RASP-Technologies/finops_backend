@@ -2,3 +2,4 @@ Show the count of assignee who have updated their email in the last 1 month.
 Show the currency distribution of transaction origins based on payment types from event store only,by grouping the data on currency and payment type
 Summarize the risk decisions only based on customer portfolio.
 How many customer portfolio are present for different group of payment types in an event_store
+Retrieve the latest event details for each lifecycle_id from the event_store table, considering only events of type 'PAYMENT'. Ensure that each lifecycle_id has only one most recent event based on event_occured_at.
