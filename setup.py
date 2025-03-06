@@ -6,7 +6,7 @@ with open("requirements.txt") as f:
 
 setup(
     name="finops_backend",
-    version="1.0.39",
+    version="1.0.40",
     packages=find_packages(where="src"),  # Ensure it picks up your source files
     package_dir={"": "src"},
     install_requires=requirements,  # Include all dependencies from requirements.txt
