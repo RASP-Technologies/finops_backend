@@ -51,3 +51,7 @@ Once the installation is complete you can execute the following command to start
 To start in detach mode:
 
 `nohup finops_backend > finops_backend/app.log 2>&1 &`
+
+### Prompt enhancement
+
+If a field is an ARRAY of STRUCTs, use UNNEST() before accessing any nested fields inside the struct. Never access fields like x.field directly from an array—always unnest first and alias appropriately (e.g., UNNEST(x) AS y then use y.field).
