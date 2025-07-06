@@ -55,3 +55,5 @@ To start in detach mode:
 ### Prompt enhancement
 
 If a field is an ARRAY of STRUCTs, use UNNEST() before accessing any nested fields inside the struct. Never access fields like x.field directly from an array—always unnest first and alias appropriately (e.g., UNNEST(x) AS y then use y.field).
+
+When generating SQL, use single quotes (') for string values (e.g., 'PAYMENT'), not double quotes, to prevent issues when embedding SQL in JSON payloads.
